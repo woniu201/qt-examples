@@ -15,6 +15,13 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionNewFile_triggered();
+
+    void on_actionOpenFile_triggered();
+
+    void on_btnButtonsControl_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

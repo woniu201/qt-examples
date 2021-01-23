@@ -26,15 +26,21 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        MainWindow.cpp
+        MainWindow.cpp \
+    ButtonsControlWindow.cpp
 
 HEADERS += \
-        MainWindow.h
+        MainWindow.h \
+    ButtonsControlWindow.h
 
 FORMS += \
-        MainWindow.ui
+        MainWindow.ui \
+    ButtonsControlWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    controlres.qrc
