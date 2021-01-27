@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ItemWidgetsDialog</class>
+ <widget class="QDialog" name="ItemWidgetsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1242</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Item Widgets</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>List Widget</string>
+   </property>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>221</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnChangeViewMode">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>切换</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddOneListView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>添加单个</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelOneListView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>190</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>删除单个</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnInsertOneListView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>插入单个</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddMulListView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>添加多个</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelAllListView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>230</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>删除所有</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>40</y>
+     <width>291</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string notr="true">1</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>421</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Tree Widget</string>
+   </property>
+   <widget class="QPushButton" name="btnAddDataTreeView">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>添加数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGetDataTreeView">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>获取数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenFolderTreeView">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>文件夹</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>40</y>
+     <width>311</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*标题头整个区域*/
+QHeaderView 
+{
+background:transparent;
+}
+
+/*标题头 每个单独的标题区域*/
+QHeaderView::section
+{
+    color:#FFFFFF; 
+    background:#60669B; 
+    border: 1px solid rgb(255, 255, 255); 
+    text-align:center; 
+}
+
+/*整个表格的背景颜色*/
+QTableWidget
+{
+	color: rbg(255, 255, 255);
+	background-color: rgb(11, 22, 51);
+}
+ 
+/*每个单元格*/
+QTableWidget::item
+{
+	color: rgb(255, 255, 255);
+	border-bottom:1px solid rgb(255, 255, 255) ;
+}
+
+/*单元格被选中状态*/
+QTableWidget::item::selected     
+{
+    color:red; 
+    background:#EFF4FF;         
+}
+
+/*垂直滑动条*/
+QScrollBar:vertical
+{
+	background:rgb(11, 22, 51); 
+	border:1px solid grey;   
+	border-radius:9px;       
+	width: 18px;     
+}
+
+QScrollBar:horizontal
+{
+	background:rgb(11, 22, 51); 
+	border:1px solid grey;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>10</y>
+     <width>421</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Table Widget</string>
+   </property>
+   <widget class="QPushButton" name="btnAddDataTableView">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>添加数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGetDataTableView">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>获取数据</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>groupBox_3</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>treeWidget</zorder>
+  <zorder>tableWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -28,27 +28,27 @@ ButtonsControlWindow::~ButtonsControlWindow()
 
 void ButtonsControlWindow::on_pushButton1_clicked()
 {
-    QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"),  QString::fromLocal8Bit("这个一个按钮点击事件！"));
+    QMessageBox::information(this, "温馨提示",  "这个一个按钮点击事件！");
 }
 
 void ButtonsControlWindow::on_toolButton1_clicked()
 {
-    QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), QString::fromLocal8Bit("这是一个ToolButton点击事件！"));
+    QMessageBox::information(this, "温馨提示", "这是一个ToolButton点击事件！");
 }
 
 void ButtonsControlWindow::on_testBtn1_clicked()
 {
     if(ui->radioButton1->isChecked())
     {
-        QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), ui->radioButton1->text());
+        QMessageBox::information(this, "温馨提示", ui->radioButton1->text());
     }
     if(ui->radioButton2->isChecked())
     {
-        QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), ui->radioButton2->text());
+        QMessageBox::information(this, "温馨提示", ui->radioButton2->text());
     }
     if(ui->radioButton3->isChecked())
     {
-        QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), ui->radioButton3->text());
+        QMessageBox::information(this,"温馨提示", ui->radioButton3->text());
     }
 }
 
@@ -56,11 +56,11 @@ void ButtonsControlWindow::on_testBtn2_clicked()
 {
     if(ui->radioButton4->isChecked())
     {
-        QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), ui->radioButton4->text());
+        QMessageBox::information(this, "温馨提示", ui->radioButton4->text());
     }
     if(ui->radioButton5->isChecked())
     {
-        QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), ui->radioButton5->text());
+        QMessageBox::information(this, "温馨提示", ui->radioButton5->text());
     }
 }
 
@@ -79,7 +79,7 @@ void ButtonsControlWindow::on_testBtn3_clicked()
     {
         str += "; " + ui->checkBox3->text();
     }
-    QMessageBox::information(this, QString::fromLocal8Bit("温馨提示"), str);
+    QMessageBox::information(this, "温馨提示", str);
 }
 
 void ButtonsControlWindow::on_buttonBox_accepted()

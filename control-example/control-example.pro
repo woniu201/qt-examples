@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         MainWindow.cpp \
-    ButtonsControlWindow.cpp
+    ButtonsControlWindow.cpp \
+    ItemWidgetsDialog.cpp
 
 HEADERS += \
         MainWindow.h \
-    ButtonsControlWindow.h
+    ButtonsControlWindow.h \
+    ItemWidgetsDialog.h
 
 FORMS += \
         MainWindow.ui \
-    ButtonsControlWindow.ui
+    ButtonsControlWindow.ui \
+    ItemWidgetsDialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

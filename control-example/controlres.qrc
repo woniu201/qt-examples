@@ -6,5 +6,8 @@
         <file>images/switchOn.png</file>
         <file>images/CheckboxOff.png</file>
         <file>images/CheckboxOn.png</file>
+        <file>images/file.png</file>
+        <file>images/folder.png</file>
+        <file>images/man.png</file>
     </qresource>
 </RCC>
