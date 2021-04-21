@@ -3,7 +3,8 @@
 #include <QMessageBox>
 #include <QLabel>
 #include "ButtonsControlWindow.h"
-#include "ItemWidgetsDialog.h"
+#include "ItemWidgetsControlDialog.h"
+#include "ContainersControlDialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -56,4 +57,13 @@ void MainWindow::on_btnItemWidgetsControl_clicked()
 {
     ItemWidgetsDialog* itemWidgetsDialog = new ItemWidgetsDialog;
     itemWidgetsDialog->show();
+}
+
+/**
+ * @brief 启动Containers 控件窗口
+ */
+void MainWindow::on_btnContainersControl_clicked()
+{
+    ContainersControlDialog* containersControlDialog = new ContainersControlDialog;
+    containersControlDialog->show();
 }

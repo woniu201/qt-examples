@@ -1,5 +1,5 @@
-#include "ItemWidgetsDialog.h"
-#include "ui_ItemWidgetsDialog.h"
+﻿#include "ItemWidgetsControlDialog.h"
+#include "ui_ItemWidgetsControlDialog.h"
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QtDebug>
@@ -285,7 +285,7 @@ void ItemWidgetsDialog::on_btnOpenFolderTreeView_clicked()
 //添加数据
 void ItemWidgetsDialog::on_btnAddDataTableView_clicked()
 {
-
+    bAddTableDataFished = false;
     //添加数据
     ui->tableWidget->setRowCount(20);
     ui->tableWidget->setItem(0, 0, new QTableWidgetItem("1"));

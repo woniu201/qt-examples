@@ -1,14 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2021-01-22T11:30:47
+# Project created by QtCreator 2021-03-24T14:45:51
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = control-example
+TARGET = sql-example
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,27 +26,17 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        MainWindow.cpp \
-    ButtonsControlWindow.cpp \
-    ItemWidgetsControlDialog.cpp \
-    ContainersControlDialog.cpp
+        SqlDialog.cpp \
+    SQLiteUtil.cpp
 
 HEADERS += \
-        MainWindow.h \
-    ButtonsControlWindow.h \
-    ItemWidgetsControlDialog.h \
-    ContainersControlDialog.h
+        SqlDialog.h \
+    SQLiteUtil.h
 
 FORMS += \
-        MainWindow.ui \
-    ButtonsControlWindow.ui \
-    ItemWidgetsControlDialog.ui \
-    ContainersControlDialog.ui
+        SqlDialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    controlres.qrc

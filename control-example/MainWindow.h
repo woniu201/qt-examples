@@ -24,6 +24,8 @@ private slots:
 
     void on_btnItemWidgetsControl_clicked();
 
+    void on_btnContainersControl_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
