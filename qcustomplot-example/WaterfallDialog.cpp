@@ -19,6 +19,10 @@ WaterfallDialog::~WaterfallDialog()
     delete ui;
 }
 
+/**
+ * @brief 画瀑布图函数
+ * @param customPlot
+ */
 void WaterfallDialog::PlotWaterfall(QCustomPlot* customPlot)
 {
     //背景为黑色

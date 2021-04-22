@@ -27,14 +27,17 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         WaterfallDialog.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    CursorDialog.cpp
 
 HEADERS += \
         WaterfallDialog.h \
-    qcustomplot.h
+    qcustomplot.h \
+    CursorDialog.h
 
 FORMS += \
-        WaterfallDialog.ui
+        WaterfallDialog.ui \
+    CursorDialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
